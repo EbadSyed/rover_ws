@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+	<node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen">
+		<param name="port" value="/dev/ttyUSB0"/>
+		<param name="baud" value="56700"/>
+		<param name="pwm_forward" value="1400"/>
+		<param name="pwm_backward" value="1300"/>
+	</node>
+	<node pkg="rover_hardware" type="imuraw2imu_node.py" name="serial_node2" output="screen">
+		
+	</node>
+
+</launch>

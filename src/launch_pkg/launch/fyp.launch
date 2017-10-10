@@ -1,0 +1,20 @@
+<launch>
+
+<!-- joy node -->
+  <node respawn="true" pkg="joy"
+        type="joy_node" name="turtle_joy" >
+  </node>
+
+<!--teleop-->
+<node name="teleop" pkg="teleop_rover" type="teleop.py" output="log" />
+
+<!--simulation-->
+<include file="$(find rover_gazebo)/launch/rover_simulation.launch" />
+
+<!--SLAM-->
+<!--include file="$(find rover_localization)/launch/hector_slam.launch"/-->
+
+<!--odom-->
+<!--include file="$(find rover_localization)/launch/scanmatcher.launch" /-->
+
+</launch>

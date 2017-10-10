@@ -1,0 +1,6 @@
+<launch>
+	
+	<include file="$(find rover_localization)/launch/scanmatcher.launch"/>
+	<include file="$(find rover_localization)/launch/map.launch"/>
+	
+</launch>

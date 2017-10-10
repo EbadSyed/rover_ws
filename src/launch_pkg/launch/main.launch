@@ -1,0 +1,12 @@
+<launch>
+	
+	<include file="$(find rover_hardware)/launch/rover_tf.launch"/>
+	<include file="$(find rover_hardware)/launch/tim.launch"/>
+	<!--node name="joy_node" pkg="joy" type="joy_node" output="screen" /-->
+	<node name="teleop" pkg="teleop_rover" type="teleop.py" output="screen" />
+	<include file="$(find teleop_rover)/launch/bringup_teleop.launch"/>
+	<include file="$(find rover_localization)/launch/scanmatcher.launch"/>
+	<include file="$(find rover_localization)/launch/map.launch"/>
+	<include file="$(find rover_localization)/launch/amcl.launch"/>
+	<include file="$(find rover_localization)/launch/webcam.launch"/>
+</launch>

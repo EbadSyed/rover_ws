@@ -1,0 +1,9 @@
+<launch>
+<!-- joy node -->
+  <node respawn="true" pkg="joy"
+        type="joy_node" name="turtle_joy" >
+  </node>
+
+<!--teleop-->
+<node name="teleop" pkg="teleop_rover" type="teleop.py" output="log" />
+</launch>
