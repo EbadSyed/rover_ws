@@ -1,0 +1,8 @@
+prefix=/home/ebad/rover_ws/devel
+
+Name: rover_hardware
+Description: Description of rover_hardware
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ebad/rover_ws/devel/lib 
+Requires: 

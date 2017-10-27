@@ -1,0 +1,8 @@
+prefix=/home/ebad/rover_ws/install
+
+Name: rover_navigation
+Description: Description of rover_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ebad/rover_ws/install/lib 
+Requires: 

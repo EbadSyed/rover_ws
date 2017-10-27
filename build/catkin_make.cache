@@ -1,0 +1,2 @@
+launch_pkg:rover_hardware:rover_localization:rover_navigation:rover_urdf:teleop_rover
+-DCATKIN_DEVEL_PREFIX=/home/ebad/rover_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ebad/rover_ws/install -G Unix Makefiles
